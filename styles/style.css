@@ -253,6 +253,7 @@
   font-weight: 400;
   margin: 24px 0 0;
   color: #ffffff;
+  margin-bottom: 68px;
 }
 
 /* Add the CSS rule for your new class here. Make sure to place it before .card: parents should precede their children */
@@ -361,6 +362,9 @@
   overflow: hidden;
   position: relative;
   box-sizing: border-box;
+  align-items: flex-start;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .about__title {
@@ -369,9 +373,10 @@
   line-height: 30px;
   font-weight: 500;
   z-index: 1;
-  display: flex;
-  justify-content: flex-start;
+  margin: 0;
   max-width: 154px;
+  display: flex;
+  position: relative;
 }
 
 .about__content {
@@ -380,14 +385,13 @@
   font-weight: 400;
   max-width: 660px;
   margin: 0 120px;
-  flex-wrap: wrap;
   z-index: 1;
 }
 
 .about__paragraph {
   margin: 0;
   max-width: 100%;
-  margin-top: 32px;
+  margin-bottom: 32px;
   z-index: 1;
 }
 
@@ -399,7 +403,7 @@
   position: absolute;
   top: -121px;
   left: -91px;
-  z-index: -1;
+  z-index: 0;
 }
 
 .footer {
@@ -422,7 +426,8 @@
 }
 
 .footer__logo {
-  width: 153px;
+  width: 116px;
+  height: 21px;
 }
 
 .footer__list {
@@ -461,5 +466,6 @@
   height: 16px;
   margin-right: 10px;
 }
-.footer__copyright {
+.footer__column-copyright {
+  margin: 108x 0 0;
 }
